@@ -19,8 +19,8 @@ const Footer = () => {
 
     return (
         <>
-            <div className="xl:max-w-[1320px] md:h-[200px] xl:h-[211px] mx-auto md:mt-[120px] xl:mt-[140px] flex justify-between xl:gap-[20px] md:px-10 xl:px-0">
-                <div className="md:max-w-[367px]">
+            <div className="sm:pb-10 md:pb-0 xl:max-w-[1320px] md:h-[200px] xl:h-[211px] mx-auto sm:mt-[120px] xl:mt-[140px] flex sm:justify-center md:justify-between xl:gap-[20px] sm:px-5 md:px-10 xl:px-0">
+                <div className="sm:max-w-[175px] md:max-w-[367px]">
                     <h4 className="uppercase text-2xl">coral</h4>
                     <p className="my-5">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -39,10 +39,10 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <ul>
-                    <li className="font-bold">Category</li>
+                <ul className="sm:hidden md:block">
+                    <li className="font-bold mb-5">Category</li>
                     {categories.length > 0
-                        ? categories.map((el) => (
+                        ? categories.slice(0,5).map((el) => (
                               <li key={`footer-list-${el.id}`}>
                                   {el.id == 3 ? "chair" : el.name}
                               </li>
@@ -50,14 +50,14 @@ const Footer = () => {
                         : null}
                 </ul>
                 <ul>
-                    <li className="font-bold">ABOUT US</li>
+                    <li className="font-bold mb-5">ABOUT US</li>
                     <li>Our Producers</li>
                     <li>Sitemap</li>
                     <li>FAQ</li>
                     <li>Terms & Conditions</li>
                 </ul>
-                <ul className="md:hidden xl:block">
-                    <li className="font-bold">CUSTOMER SERVICES</li>
+                <ul className="sm:hidden xl:block">
+                    <li className="font-bold mb-5">CUSTOMER SERVICES</li>
                     <li>Contact Us</li>
                     <li>Track Your Order</li>
                     <li>Product Care & Repair</li>
