@@ -13,7 +13,7 @@ module.exports = {
         }
       },
       animation: {
-        'carousel': 'slider_infinite 10s linear infinite'
+        'carousel': 'slider_infinite 15s linear infinite'
       }
     },
   },

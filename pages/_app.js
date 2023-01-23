@@ -1,5 +1,7 @@
-import { Roboto,  } from '@next/font/google'
+import { Roboto, } from '@next/font/google'
 import '@/styles/globals.css'
+import Footer from '@/components/Footer/Footer'
+import NavbarHome from '@/components/Navbar/NavbarHome'
 
 const inter = Roboto({
   weight: '400',
@@ -8,8 +10,12 @@ const inter = Roboto({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={inter.className}>
-      <Component {...pageProps} />
-    </main>
+    <>
+      <NavbarHome />
+      <main className={inter.className}>
+        <Component {...pageProps} />
+      </main>
+      <Footer />
+    </>
   )
 }
