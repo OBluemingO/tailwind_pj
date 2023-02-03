@@ -145,7 +145,7 @@ export default function Home() {
                 </div>
                 <div className='basis-1/2 flex flex-wrap overflow-hidden'>
                   <div className='h-[50%] w-[50%]  overflow-hidden sm:px-1 md:px-2 md:pb-2'>
-                    <img className='object-cover h-full w-full' src={categories[5].image} alt='image-mock2 ' />
+                    <img className='object-cover h-full w-full' src={categories[2].image} alt='image-mock2 ' />
                   </div>
                   <div className='h-[50%] w-[50%]  overflow-hidden  sm:px-1 md:px-2 md:pb-2'>
                     <img className='object-cover h-full w-full' src={categories[1].image} alt='image-mock3 ' />

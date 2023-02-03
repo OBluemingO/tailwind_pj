@@ -26,10 +26,19 @@ module.exports = {
         slider_infinite: {
           '0%': { transform: 'translateX(0%)'},
           '100%': { transform: 'translateX(-100%)'},
-        }
+        },
+        fade_to_left: {
+          '0%': { transform: 'translateX(0)', opacity: '100%'},
+          '100%': { transform: 'translateX(-100%)', opacity: '0%'},
+        },
+        fade_to_right:{ 
+          '0%': { transform: 'translateX(-100%)', opacity: '0%'},
+          '100%': { transform: 'translateX(0%)'}, opacity: '100%'}
       },
       animation: {
-        'carousel': 'slider_infinite 15s linear infinite'
+        'carousel': 'slider_infinite 15s linear infinite',
+        'fade_left': 'fade_to_left 0.5s ease-in-out forwards',
+        'fade_right': 'fade_to_right 0.5s ease-in-out forwards'
       }
     },
   },
