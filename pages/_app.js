@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <NavbarHome />
-      <NavbarSliceBar />
+      {/* <NavbarSliceBar /> */}
       <main className={inter.className}>
         <Component {...pageProps} />
       </main>
